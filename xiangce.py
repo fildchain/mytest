@@ -27,7 +27,8 @@ if 'ind' not in st.session_state:
 #define:定义
 def nextImg():
     st.session_state['ind'] =(st.session_state['ind'] + 1) % len(images)
-
+def prevImg():
+    st.session_state['ind'] =(st.session_state['ind'] - 1) % len(images)
 
 #st.image()总共两个参数，url图片地址 caption:图片备注
 st.image(images[st.session_state['ind']]['url'],caption=images[st.session_state['ind']]['parm'])
@@ -38,7 +39,7 @@ c1,c2 =st.columns(2)
 
 with c1:
 #st.button()按钮，test:按钮的文字，on_click:点击按钮之后要做的事情
-    st.button('上一张',on_click=nextImg, use_container_width=True)
+    st.button('上一张',on_click=prevImg, use_container_width=True)
 with c2:
 #st.button()按钮，test:按钮的文字，on_click:点击按钮之后要做的事情
     st.button('下一张',on_click=nextImg,use_container_width=True)   
