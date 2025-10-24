@@ -4,7 +4,7 @@ st.set_page_config(page_title='视频', page_icon='📹')
 st.title('视频播放')
 #视频地址
 video_url=[{
-            'url':'https://upos-sz-mirrorcosov.bilivideo.com/upgcxcode/78/27/373412778/373412778_da2-1-416.mp4',
+            'url':'https://www.w3school.com.cn/example/html5/mov_bbb.mp4',
             'title':'动画',
             'episode':'1'
 
